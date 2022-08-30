@@ -13,11 +13,24 @@
     //DICA: Use G para gasolina, A para álcool, N para GNV, D para diesel
 
     //ENTRADA
-
-
+const combustivel = prompt(`que combustivel vai bota \n G = gasolina A = alcool GNV = gnv D = disel `)
+let resposta
     //PROCESSAMENTO
-
+switch (combustivel) {
+    case "G":
+        resposta = "A gasolina esta em R$5,00"
+        break;
+case "A": 
+    resposta = "Alcool esta em falta"
+    break;
+    case "GNV":
+        resposta ="O preço do litro do dissel enta R$8,00"
+        break;
+    default:
+        resposta = "algo de errado"
+        break;
+}
 
     //SAÍDA
-
+document.write(resposta);
 </script>

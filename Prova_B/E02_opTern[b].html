@@ -11,11 +11,15 @@
     //Apresente o valor final a ser pago pela casa, considerando o juro estabelecido para a quantidade de anos de financiamento.
 
     //ENTRADA
+const Vcasa = Number(prompt("preço da casa"));
+const tempoDePagamento = Number(prompt("tempo que ira pagar"));
 
-
+let resposta
     //PROCESSAMENTO
-
-
+(tempoDePagamento <= 10) ? resposta = (Vcasa * (45 / 100))
+: (tempoDePagamento === 10 <= 20) ? resposta = (Vcasa * (60 / 100))
+: (tempoDePagamento > 20) ? resposta = (Vcasa * (85 / 100))
+: resposta = "algo de errado"
     //SAÍDA
-
+    document.write(resposta); 
 </script>

@@ -11,11 +11,28 @@
     //Calcule e apresente o valor total a ser pago para o funcionário, de acordo com o seu cargo e a quantidade de horas trabalhadas.
 
     //ENTRADA
-
-
+const cargo = prompt(`cargo que esta \n P = programador L = lider D = diretor`);
+const hs = Number(prompt("horas trabalhadas na semana"));
+const P = 10 * (10/100);
+const L = 10 * (15/100);
+const D = 10 * (30/100);
+let resposta;
     //PROCESSAMENTO
-
+switch (cargo) {
+    case "P": 
+        resposta = `Salario sera de ${P.toFixed(2)}` 
+        break;
+        case "L": 
+        resposta = `Salario sera de ${L.toFixed(2)}` 
+        break;
+        case "D": 
+        resposta = `Salario sera de ${D.toFixed(2)}` 
+        break;
+    default:
+    resposta = "algo de errado"
+        break;
+}
 
     //SAÍDA
-
+document.write(resposta);
 </script>

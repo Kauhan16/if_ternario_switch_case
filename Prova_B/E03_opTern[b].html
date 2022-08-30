@@ -10,11 +10,21 @@
     //Apresente a situação do preço do combustível
 
     //ENTRADA
-
-
+const posto1 = Number(prompt("preço da gasolina no primeiro posto"));
+const posto2 = Number(prompt("preço da gasolina no segundo posto"));
+const posto3 = Number(prompt("preço da gasolina no terceiro posto"));
+let resposta
     //PROCESSAMENTO
-
-
+    (posto1 <= 5) ? resposta = "posto 1 esta aceitavel o preço"
+    :(posto1 === 5<= 6.5) ? resposta = "posto 1 esta alto o preço"
+    :(posto1 > 6.5) ? resposta = "posto 1 esta abusivo o preço"
+    :(posto2 <= 5) ? resposta = "posto 2 esta aceitavel o preço"
+    :(posto2 === 5 <= 6.5) ? resposta = "posto 2 esta alto o preço"
+    :(posto2 > 6.5) ? resposta = "posto 2 esta abusivo o preço"
+    :(posto3 <= 5) ? resposta = "posto 3 esta aceitavel o preço"
+    :(posto3 === 5 <= 6.5) ? resposta = "posto 3 esta alto o preço"
+    :(posto3 > 6.5) ? resposta = "abusivo"
+    : resposta = "algo de errado"
     //SAÍDA
-
+document.write(resposta);
 </script>
